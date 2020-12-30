@@ -1,0 +1,135 @@
+:root {
+    /* CSS HEX */
+    /* --black: #000000ff;
+    --middle-green-yellow: #b8c480ff;
+    --wild-orchid: #d56aa0ff;
+    --baby-blue-eyes: #a3cef1ff;
+    --yellow-green-crayola: #d4e79eff; */
+
+    --mainColor: #a3cef1ff;
+    --secondaryColor: white;
+    --tertiaryColor: #d4e79eff;
+
+    --mainText: #000000ff;
+    --secondaryText: darkgray;
+
+    --borderColor: #b8c480ff;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+p, li, span, label, input, textarea {
+    color: var(--secondaryText);
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainText);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    background-color: var(--mainColor);
+}
+
+#logo {
+    margin: 0;
+    padding: 10px;
+}
+
+#nav-links {
+    margin: 0;
+    padding: 10px;
+}
+
+#nav-links a {
+    color: var(--mainText);
+    font-size: 20px;
+}
+
+#nav-links li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 5em;
+}
+
+.intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    border: 2px solid var(--borderColor);
+    gap: 50px;
+}
+
+.intro {
+
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 2px solid var(--borderColor);
+    background-color: var(--tertiaryColor);
+}
+
+
+.profile {
+    overflow: hidden;
+}
+
+#profile-pic {
+    margin: 0 auto;
+    width: 200px;
+    border: 2px solid var(--borderColor);
+    border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .intro-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
