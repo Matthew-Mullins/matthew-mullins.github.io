@@ -1,0 +1,47 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 3rem;
+    padding: 1rem;
+  
+    box-shadow: 0 1rem 10rem lightgray;
+
+    background-color: white;
+}
+
+.navbar ol, li {
+    display: inline-block;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+.App-logo {
+    height: 400%;
+
+    margin-left: -4rem;
+}
+
+#Contact-Button {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    background-color: lightgray;
+
+    border: none;
+    border-radius: 50%;
+
+    outline: none;
+}
+
+#Contact-Button:hover {
+    cursor: pointer;
+    border: 2px solid gray;
+}
