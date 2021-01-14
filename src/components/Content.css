@@ -1,6 +1,56 @@
 .content {
-    width: 80%;
-    margin: 4rem auto;
+    margin: 5vh 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vmin;
+    border: 1px dashed lightcoral;
+}
+
+.content-section {
+    padding: 10%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: 1px dashed lightcoral;
+    
+    box-sizing: border-box;
+    resize: horizontal;
+    max-width: 100%;
+}
+
+.frame {
+    width: 80%;
+    padding-bottom: 80%;
+    /* background-color: gold; */
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
