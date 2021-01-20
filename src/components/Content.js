@@ -1,43 +1,49 @@
 import React from 'react'
 import './Content.css'
-import face_img from '../images/face.jpg'
+import email_icon from '../images/email_icon.jpg'
+import phone_icon from '../images/phone_icon.jpg'
+import location_icon from '../images/location_icon.jpg'
 
 class Content extends React.Component {
     render () {
         return (
             <div className="content">
-                <div className="content-section">
-                    <div className="frame">
-                        <div className="intro">
-                            <h1 style={{margin: '0', fontSize: '2rem'}}>Hello, I am</h1>
-                            <h1 style={{margin: '0', fontSize: '4rem'}}>Matthew Mullins</h1>
-                            <h1 style={{margin: '0', fontSize: '3rem'}}>Developer</h1>
-                            <h1 style={{margin: '0', fontSize: '1rem'}}>Email</h1>
-                            <h1 style={{margin: '0', fontSize: '1rem'}}>Phone Number</h1>
-                            <h1 style={{margin: '0', fontSize: '1rem'}}>Location</h1>
-                            <h1 style={{margin: '0'}}>Socials</h1>
-                        </div>
+                <div id="intro" className="section">
+                    <h1>Matthew Mullins</h1>
+                    <h4>Software Developer</h4>
+                    <br/>
+                    <br/>
+                    <div style={{marginBottom: '.5em'}}>
+                        <img style={{width: '2em', height: '2em', verticalAlign: 'middle', marginRight: '1em'}} src={email_icon} alt=""/>
+                        <span style={{display: 'inline-block', verticalAlign: 'middle'}}>matthew@mullinsfamily.ca</span>
                     </div>
+                    <div style={{marginBottom: '.5em'}}>
+                        <img style={{width: '2em', height: '2em', verticalAlign: 'middle', marginRight: '1em'}} src={phone_icon} alt=""/>
+                        <span style={{display: 'inline-block', verticalAlign: 'middle'}}>+1 (999) 999-9999</span>
+                    </div>
+                    <div>
+                        <img style={{width: '2em', height: '2em', verticalAlign: 'middle', marginRight: '1em'}} src={location_icon} alt=""/>
+                        <span style={{display: 'inline-block', verticalAlign: 'middle'}}>Calgary, AB T3M0J7</span>
+                    </div>
+                    <br/>
+                    <br/>
+                    <ul id="socials">
+                        <button>LI</button>
+                        <button>GH</button>
+                        <button>GH</button>
+                        <button>GH</button>
+                    </ul>
                 </div>
-                <div className="content-section">
-                    <div className="frame">
-                        <img src={face_img} alt="" style={{borderRadius: '50%'}}/>
-                    </div>
+                <div id="image" className="section">
                 </div>
-                <div className="content-section">
-                    <div className="frame">
-                        <img src={face_img} alt=""/>
-                    </div>
+                <div id="projects" className="section">
+                    <h1>projects</h1>
                 </div>
-                <div className="content-section">
-                    <div className="frame">
-                        <img src={face_img} alt=""/>
-                    </div>
+                <div id="about" className="section">
+                    <h1>about</h1>
                 </div>
-                <div className="content-section">
-                    <div className="frame">
-                        <img src={face_img} alt=""/>
-                    </div>
+                <div id="contact" className="section">
+                    <h1>contact</h1>
                 </div>
             </div>
         )
