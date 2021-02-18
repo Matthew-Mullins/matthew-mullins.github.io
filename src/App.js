@@ -4,7 +4,7 @@ import Content from './components/Content.js'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <Content />
     </div>

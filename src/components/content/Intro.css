@@ -1,0 +1,43 @@
+.intro-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-text {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.intro-icon {
+    width: 3vw;
+    height: 3vw;
+    vertical-align: middle;
+    margin-right: 2vw;
+}
+
+.intro-text h1 {margin: 0; font-size: 4.5vw;}
+.intro-text h2 {margin: 0; font-size: 4vw;}
+.intro-text h3 {margin: 0; font-size: 3.5vw;}
+.intro-text h4 {margin: 0; font-size: 3vw;}
+.intro-text h5 {margin: 0; font-size: 2.5vw;}
+.intro-text h6 {margin: 0; font-size: 2vw;}
+.intro-text p  {margin: 0; font-size: 1.5vw;}
+
+.intro-image-wrapper {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image {
+    display: block;
+    width: 75%;
+    object-fit: contain;
+    border-radius: 25%;
+    -webkit-box-shadow: 25px -25px 3px 0px rgba(0,0,0,0.75); 
+    box-shadow: 25px -25px 3px 0px rgba(0,0,0,0.75);
+}

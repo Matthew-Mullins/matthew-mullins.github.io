@@ -1,4 +1,89 @@
-.App {
+.app {
   display: flex;
   flex-direction: column;
 }
+
+.circle-button {
+  height: 2.5rem;
+  width: 2.5rem;
+
+  background-color: lightgray;
+
+  border: none;
+  border-radius: 50%;
+
+  outline: none;
+}
+
+.circle-button:hover {
+  cursor: pointer;
+  border: 2px solid gray;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 10px;
+  box-shadow: 0 10px 100px lightgray;
+  background-color: white;
+}
+
+.navbar-logo {
+  width: 200px;
+}
+
+.navbar ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.navbar a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#projects-section {
+  position: relative;
+  top: -100px;
+}
+
+#skills-section {
+  position: relative;
+  top: -100px;
+}
+
+#contact-section {
+  position: relative;
+  top: -100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
